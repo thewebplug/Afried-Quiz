@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+main {
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.start_button {
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    padding: 10px 40px;
+    font-size: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.start_button:hover {
+    transform: scale(1.05);
+}
+
+
+#quiz-container {
+    /* width: 200px; */
+    /* height: 200px; */
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 7px;
+}
+
+.none {
+    display: none !important;
+}
+
+#timer {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#question {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.restart-button{
+    background-color: aqua;
+    border: none;
+    outline: none;
+    padding: 10px 60px;
+    font-size: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.restart-button:hover {
+    transform: scale(1.05);
+}
+
+.options {
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.options:hover {
+    transform: scale(1.02);
+    border-color: rgb(23, 195, 23);
+    color: rgb(23, 195, 23);
+}
+
+
+
+#result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 15px rgba(45, 151, 38, 0.15);
+    background-color: #f5f5f5;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+}
+
+.final_result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5f5f5;
+    width: 600px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    box-shadow: 0px 0px 15px rgba(45, 151, 38, 0.15);
+
+}
+
+.start_title {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.incorrect {
+    color: red;
+}
+
+.correct {
+    color: rgb(23, 195, 23);
+}
